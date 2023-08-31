@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Recommendation System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Course Recommendation System</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form method="POST" action="/recommend" class="mb-4">
+                    <div class="input-group">
+                        <input type="text" name="skill" class="form-control" placeholder="Enter your skill...">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-primary">Get Recommendations</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="recommended-courses">
+                    <h2>Recommended Courses:</h2>
+                    <ul class="list-group">
+                        <!-- Use Flask templating to dynamically display course recommendations -->
+                        {% for course in recommended_courses %}
+                        <li class="list-group-item">{{ course }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
