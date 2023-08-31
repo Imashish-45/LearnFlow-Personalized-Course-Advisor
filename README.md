@@ -18,7 +18,7 @@ Welcome to the Course Recommendation System project! This repository contains co
 - [Demo](#demo)
 - [Technologies](#technologies)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -47,7 +47,7 @@ Are you looking to enhance your learning journey? This recommendation system has
 
 ![Demo GIF](images/demo.gif) <!-- Add a GIF demonstrating your project -->
 
-Check out the [demo video](https://youtu.be/your_demo_video_link) for a walkthrough of the project.
+Check out the [demo video](https://drive.google.com/file/d/1Jk4INg6aH-yG-X_TADRa0WZP9v-3HkNL/view?usp=sharing) for a walkthrough of the project.
 
 ## Technologies
 
@@ -56,7 +56,7 @@ Check out the [demo video](https://youtu.be/your_demo_video_link) for a walkthro
 - Machine Learning
 - Flask (for web interface)
 - Scikit-learn, NLTK, pandas (for data processing)
-- [Visuwords API](https://visuwords.com) (for contextual linking of concepts)
+- [Visuwords API](https://visuwords.com) (future scope: contextual linking of concepts)
 
 ## Contributing
 
@@ -68,9 +68,7 @@ Contributions are welcome! If you find a bug or want to enhance the project, fee
 4. Push the branch: `git push origin feature/your-feature`.
 5. Submit a pull request.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
