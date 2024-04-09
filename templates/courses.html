@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    nav li a:hover {
+      background-color: #444;
+    }
+
+    /* Course Grid Styles */
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .course-card {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-card h3 {
+      margin-top: 10px;
+    }
+
+    .course-card p {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/courses">Courses</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="course-grid">
+    <div class="course-card">
+      <h3>Python Fundamentals</h3>
+      <p>Learn the basics of Python programming language.</p>
+    </div>
+    <div class="course-card">
+      <h3>Web Development with HTML and CSS</h3>
+      <p>Build responsive and beautiful web pages.</p>
+    </div>
+    <div class="course-card">
+      <h3>Mastering SQL Queries</h3>
+      <p>Dive deep into the world of database management.</p>
+    </div>
+    <div class="course-card">
+      <h3>Mastering LLMs with Langchain</h3>
+      <p>Explore the power of Large Language Models (LLMs) using Langchain.</p>
+    </div>
+    <div class="course-card">
+      <h3>DevOps for Beginners</h3>
+      <p>Learn the fundamentals of DevOps and how to automate your development workflows.</p>
+    </div>
+    <div class="course-card">
+      <h3>Data Engineering</h3>
+      <p>Dive into the world of data engineering and learn how to build robust data pipelines.</p>
+    </div>
+    <div class="course-card">
+      <h3>Ethical AI: Principles and Practices</h3>
+      <p>Explore the ethical considerations in the development and deployment of AI systems.</p>
+    </div>
+    <div class="course-card">
+      <h3>Blockchain Fundamentals</h3>
+      <p>Understand the core concepts of blockchain technology and its real-world applications.</p>
+    </div>
+    <div class="course-card">
+      <h3>Cybersecurity Essentials</h3>
+      <p>Learn the fundamental principles and best practices of cybersecurity.</p>
+    </div>
+  </div>
+  <div class="back-to-home">
+    <a href="/"><button>Back to Home</button></a>
+  </div>
+</body>
+</html>
