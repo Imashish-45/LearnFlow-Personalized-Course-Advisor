@@ -1,0 +1,45 @@
+/* styles.css */
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    float: left;
+}
+
+.navbar-logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar-nav {
+    float: right;
+    list-style-type: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff6f61;
+}

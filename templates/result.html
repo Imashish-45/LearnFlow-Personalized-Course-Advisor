@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommended Courses</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    nav li a:hover {
+      background-color: #444;
+    }
+
+    /* Recommendation Grid Styles */
+    .recommendation-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .recommendation-card {
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .recommendation-card h3 {
+      margin-top: 10px;
+    }
+
+    .recommendation-card p {
+      margin-top: 5px;
+    }
+
+    /* Back to Home Button Styles */
+    .back-to-home {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .back-to-home button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .back-to-home button:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/courses">Courses</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Recommended Courses</h1>
+  <div class="recommendation-grid">
+    {% for course in courses %}
+    <div class="recommendation-card">
+      <h3>{{ course }}</h3>
+      <p>Description for {{ course }}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="back-to-home">
+    <a href="/"><button>Back to Home</button></a>
+  </div>
+</body>
+</html>
